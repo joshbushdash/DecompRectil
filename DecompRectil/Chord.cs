@@ -19,19 +19,17 @@ namespace DecompRectil
         {
             this.location = location;
             this.m_DirectionIsX = m_DirectionIsX;
+            this.startP = startP;
+            this.endP = endP;
             if (start < end)
             {
                 this.start = start;
                 this.end = end;
-                this.startP = startP;
-                this.endP = endP;
             }
             else
             {
                 this.start = end;
                 this.end = start;
-                this.startP = endP;
-                this.endP = startP;
             }
         }
         //检验凹点连线是否穿过边界
